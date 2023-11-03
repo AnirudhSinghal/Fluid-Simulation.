@@ -20,3 +20,12 @@ Poor mouse tracking
 Poor frame rate
 
 Code ONLY stars from Top left Corne
+
+# Demo video
+
+https://drive.google.com/drive/folders/1wNcpyV3Vb6qU9rnXwSY8a9MBWslwwiz4?usp=drive_link
+
+# Project Report
+
+https://drive.google.com/drive/folders/1DqhXCgzASwOEXqdlIQnEMfITgkxUlyPX?usp=drive_link
+
