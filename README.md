@@ -23,7 +23,7 @@ Code ONLY stars from Top left Corne
 
 # Demo video
 
-https://drive.google.com/drive/folders/1wNcpyV3Vb6qU9rnXwSY8a9MBWslwwiz4?usp=drive_link
+https://drive.google.com/file/d/1xp1cqfNws6ZyGn_2g0hgFxFPYwbL4X3G/view?usp=drive_link
 
 # Project Report
 
