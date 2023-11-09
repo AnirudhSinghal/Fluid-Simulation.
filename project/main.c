@@ -2,7 +2,7 @@
 #include <SDL2/SDL.h>
 #include <stdio.h>
 #include <stdlib.h>
-int N = 840;
+int N = 640;
 int iter = 6;
 
 #define IX( x, y) (( x) + ( y) * N )
@@ -97,7 +97,7 @@ static void lin_solve(int b, float *x, float *x0, float a, float c, int iter, in
 static void diffuse (int b, float *x, float *x0, float diff, float dt, int iter, int N)
 {
     float a = dt * diff * (N - 2) * (N - 2);
-    lin_solve(b, x, x0, a, 1 + 6 * a, iter, N);
+    lin_solve(b, x, x0, a, 1 + 4 * a, iter, N);
 }
 
 static void advect(int b, float *d, float *d0,  float *velocX, float *velocY, float dt, int N)
@@ -173,7 +173,7 @@ static void project(float *velocX, float *velocY, float *p, float *div, int iter
         }
     set_bnd(0, div, N); 
     set_bnd(0, p, N);
-    lin_solve(0, p, div, 1, 6, iter, N);
+    lin_solve(0, p, div, 1, 4, iter, N);
     
         for (int j = 1; j < N - 1; j++) {
             for (int i = 1; i < N - 1; i++) {
@@ -300,8 +300,6 @@ int main(int argc, char* args[]) {
         SDL_SetRenderDrawColor(gRenderer, 0, 0, 0, 255);
         SDL_RenderClear(gRenderer);
 
-        FluidCubeAddDensity(cube , 100 , 146 , 600);
-        FluidCubeAddVelocity(cube , 100 , 150 , 0 , -10);
         FluidCubeStep(cube);
 
 
