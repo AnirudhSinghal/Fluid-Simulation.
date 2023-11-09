@@ -262,7 +262,7 @@ int main(int argc, char* args[]) {
         return 1;
     }
 
-    gWindow = SDL_CreateWindow("Grid Hover Effect", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+    gWindow = SDL_CreateWindow("Fluid Simulation", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
     if (gWindow == NULL) {
         printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
         return 2;
